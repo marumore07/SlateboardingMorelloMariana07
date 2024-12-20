@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    /* reset de margin */
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+/*
+body{
+    margin: 0 20%; /*viewpoint widht ventana navegador */
+
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: normal;
+    align-content: center;
+    text-align: left;
+
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: normal;
+    align-content: center;
+    text-align: left;
+    padding: 40px;
+}
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+header h1 {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    padding: 30px 0px 0px 30px;
+}
+
+
+.parrafo-envio {
+    color: rgb(0, 0, 0);
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.anclaje {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding-left: 90px;
+    padding-bottom: 20px;
+
+}
+
+
+.parrafo-blanco {
+    color: rgb(255, 255, 255);
+}
+
+
+body nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: darkred;
+    padding: 10px;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+
+body nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+.foto-fondo {
+    width: 100%;
+    background-image: url(imagenes/skate_chica.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    display: inline-block;
+
+}
+
+
+.texto-sobre-imagen {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    color: white;
+    font-size: 16px;
+}
+
+
+.h2-fondo-imagen {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    color: white;
+    font-size: 100px;
+    padding: 0px;
+}
+
+.imagen {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+    object-fit: cover;
+}
+
+
+#productos {
+    width: 100%;
+}
+
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+
+.tarjeta {
+    width: 300px;
+    display: inline-block;
+    position: relative;
+}
+
+.boton-imagen {
+    width: 300px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: darkred;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#destacados {
+    width: 100%;
+    margin: 30px;
+}
+
+
+.productos-destacados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.producto-destacado {
+    border: none;
+    padding: 2rem;
+    width: 200px;
+}
+
+.boton-precio {
+    color: rgb(255, 255, 255);
+    background-color: darkred;
+    border: none;
+    height: 30px;
+    width: 150px;
+}
+
+
+.video-background {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+.reseñas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+    height: 30rem;
+    padding: 2rem;
+}
+
+
+.reseña {
+    border: 2px solid darkred;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.h2-reseña {
+    font-size: 32px;
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
+
+/*
+@media (width < 1000px) {
+    .reseñas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+    }
+
+}
+*/
+
+
+@media (width < 500px) {
+    .reseñas {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+#contacto {
+    width: 100%;
+    padding:30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario-estilo {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+
+legend {
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    font-style: normal;
+    align-content: center;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.input-formulario {
+    border: 2px solid darkred;
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.input-formulario-msj {
+    border: 2px solid darkred;
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.boton-contacto {
+    width: 415px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: darkred;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+@media (width < 500px) {
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+.footer-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.footer-top {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 60px 30px 80px 30px;
+}
+
+.contacto-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.footer-div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.footer-div ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-div ul li {
+    margin-bottom: 10px;
+}
+
+.footer-div h4 {
+    margin-bottom: 20px;
+}
+
+/* fuentes */
+
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.oswald-condensed {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario de registro</h2>
+    <!--Formulario registro-->
+    <form class="formulario-estilo" action="https://formspree.io/f/meoqogqk" method="post">
+        <fieldset>
+        
+            <legend>Datos Personales</legend>
+            <br>
+            <label for="nombre"> Nombre: </label>
+            <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre">
+            <label for="apellido"> Apellido: </label>
+            <input name="apellido" id="apellido" type="text" placeholder="Escribe tu apellido">
+            <br><br>
+            <label for="BirthDate">Fecha Nac.(dd/mm/aaaa): </label>
+            <input type="date" name="birthdate">
+            <br><br>
+            <label for="genero"> Género: </label>
+            <input type="radio" name="genero" value="Hombre" checked>Hombre
+            <input type="radio" name="genero" value="Mujer">Mujer
+            <input type="radio" name="genero" value="No Binario"> Otro
+            <br><br>
+            <label for="email"> E-mail: </label>
+            <input name="email" id="email" type="email" placeholder="Escribe tu e-mail">
+            <label for="contraseña"> Contraseña: </label>
+            <input name="contraseña" id="contraseña" type="password" placeholder="Escribe tu contraseña">
+            <br><br>
+            <input type="submit" value="Registrarse">
+            <br><br>
+    </form>
+    <p>*Si usted hace click en el botón <strong>"Registrarse"</strong>, la informacion será enviada.</p>
+</fieldset>
+</body>
+</html>
