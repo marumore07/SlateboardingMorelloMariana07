@@ -233,6 +233,12 @@ body nav a {
     border: 2px solid darkred;
     border-radius: .5rem;
     padding: 2rem;
+    transition: all 0.3s ease-out;
+}
+
+.reseña:hover {
+    transform: translateY(-5px);
+
 }
 
 .h2-reseña {
@@ -254,9 +260,16 @@ body nav a {
 */
 
 
-@media (width < 500px) {
+@media (max-width: 500px) {
+
+    html {
+        font-size: 12px;
+        margin: 0 5%;
+
+    }
+
     .reseñas {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(200px, 1fr);
     }
 
 }
