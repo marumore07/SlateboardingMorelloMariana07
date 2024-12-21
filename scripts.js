@@ -35,19 +35,19 @@ const productos = [
     {
         nombre: "Longboard Rider Pro",
         descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
-        imagen:"imagenes/skate_lab_03.jpg",
+        imagen:"imagenes/long_lab_02.jpg",
         precio:135000,
     },
     {
         nombre: "Longboard Ether",
         descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
-        imagen:"imagenes/skate_lab_04.jpg",
+        imagen:"imagenes/long_lab_03.jpg",
         precio:120000,
     },
     {
         nombre: "Longboard Sunset",
         descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
-        imagen:"imagenes/skate_lab_02.jpg",
+        imagen:"imagenes/long_lab_04.jpg",
         precio:140000,
     },
     {
@@ -105,4 +105,28 @@ const productos = [
     
 ]
 
-console.log(productos)
+console.log(productos[1].nombre);
+
+
+let productosTienda="";
+for (let indice= 0; indice < productos.length; indice++){
+  
+    productosTienda += `
+                    <div class="producto-destacado">
+                        <img src=${productos[indice].imagen}
+                            alt="skate-lab-01">
+                        <div class="producto-contenedor">
+                            <h2>${productos[indice].nombre}</h2>
+                            <h3>Precio: $${productos[indice].precio}</h3>
+                            <p>Descripción:${productos[indice].descripcion}</p>
+                            <input id="boton-agregar-carrito" type="button" value="Agregar al Carrito"></imput>
+                        </div>
+                    </div>
+
+`;
+}
+
+console.log(productosTienda);
+
+const contenedorProductos = document.getElementById("contenedorProductos");
+contenedorProductos.innerHTML = productosTienda;
