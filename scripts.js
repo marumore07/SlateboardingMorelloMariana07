@@ -119,7 +119,7 @@ for (let indice= 0; indice < productos.length; indice++){
                             <h2 class="nombre-producto">${productos[indice].nombre}</h2>
                             <h3 class="precio-producto">$${productos[indice].precio}</h3>
                             <p><strong>Descripción:</strong><br><br>${productos[indice].descripcion}</p>
-                            <input id="boton-agregar-carrito" type="button" value="AGREGAR"></imput>
+                            <input class="boton-agregar-carrito" type="button" value="AGREGAR"></imput>
                         </div>
                     </div>
 
@@ -130,3 +130,60 @@ console.log(productosTienda);
 
 const contenedorProductos = document.getElementById("contenedorProductos");
 contenedorProductos.innerHTML = productosTienda;
+
+const botonesAgregar = document.querySelectorAll(".boton-agregar-carrito");
+console.log (botonesAgregar);
+
+const listaCarrito = document.querySelector("#carrito ul");
+console.log(listaCarrito);
+
+const totalCarrito = document.querySelector ("#carrito p");
+console.log(totalCarrito);
+
+let totalAPagar = 0;
+
+//agregar listener a cada boton
+
+for(let indice = 0; indice < botonesAgregar.length; indice++){
+
+    function agregarElemCarrito(){
+        console.log("clic" + indice);
+        const elementoLi = document.createElement("li");
+        
+        elementoLi.innerText = ` Producto: ${productos[indice].nombre} $${productos[indice].precio} `
+        console.log(elementoLi);
+
+        listaCarrito.appendChild(elementoLi);
+
+        totalAPagar += productos[indice].precio;
+
+        totalCarrito.innerText = "Total a pagar:$"+ totalAPagar;
+    }
+
+    console.log(botonesAgregar[indice])
+    botonesAgregar[indice].addEventListener("click", agregarElemCarrito)
+}
+
+//listener btn borrar
+
+const botonBorrar = document.querySelector("#boton-borrar");
+
+function borrarCarrito(){
+    listaCarrito.innerHTML = "";
+    totalCarrito.innerHTML = "Total a pagar: $0";
+    totalAPagar =0;
+}
+
+botonBorrar.addEventListener("click", borrarCarrito);
+
+
+// listener btn Ir a Pagar
+
+const botonPagar = document.querySelector ("#boton-pagar");
+
+function irAPagar(){
+
+    window.location.href = "./pagos.html"
+}
+
+botonPagar.addEventListener("click", irAPagar)
