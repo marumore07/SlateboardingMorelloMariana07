@@ -140,6 +140,8 @@ console.log(listaCarrito);
 const totalCarrito = document.querySelector ("#carrito p");
 console.log(totalCarrito);
 
+const mensajePagarCarrito = document.getElementById ("mensajeCarrito");
+
 let totalAPagar = 0;
 
 //agregar listener a cada boton
@@ -158,6 +160,7 @@ for(let indice = 0; indice < botonesAgregar.length; indice++){
         totalAPagar += productos[indice].precio;
 
         totalCarrito.innerText = "Total a pagar:$"+ totalAPagar;
+        mensajePagarCarrito.innerText = "";
     }
 
     console.log(botonesAgregar[indice])
@@ -168,10 +171,13 @@ for(let indice = 0; indice < botonesAgregar.length; indice++){
 
 const botonBorrar = document.querySelector("#boton-borrar");
 
+
+
 function borrarCarrito(){
     listaCarrito.innerHTML = "";
     totalCarrito.innerHTML = "Total a pagar: $0";
     totalAPagar =0;
+    mensajePagarCarrtito.innerText = "";
 }
 
 botonBorrar.addEventListener("click", borrarCarrito);
@@ -183,7 +189,13 @@ const botonPagar = document.querySelector ("#boton-pagar");
 
 function irAPagar(){
 
-    window.location.href = "./pagos.html"
+
+    if(listaCarrito.innerText=== ""){
+        mensajePagarCarrito.innerText = "No has seleccionado ningun Producto";
+
+    } else{
+        window.location.href = "./pagos.html"
+}
 }
 
 botonPagar.addEventListener("click", irAPagar)
