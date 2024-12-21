@@ -203,12 +203,38 @@ body nav a {
     width: 200px;
 }
 
-.boton-precio {
+#boton-agregar-carrito {
     color: rgb(255, 255, 255);
     background-color: darkred;
     border: none;
     height: 30px;
     width: 150px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.nombre-producto {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 26px;
+}
+
+
+.precio-producto {
+    color: rgb(0, 0, 0);
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+
 }
 
 
@@ -272,6 +298,9 @@ body nav a {
         grid-template-columns: minmax(200px, 1fr);
     }
 
+    .contacto {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -343,12 +372,7 @@ legend {
 }
 
 
-@media (width < 500px) {
-    .contacto {
-        grid-template-columns: 1fr;
-    }
 
-}
 
 
 .footer-div {

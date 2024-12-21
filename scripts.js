@@ -3,62 +3,62 @@ console.log("Hola")
 const productos = [
     {
         nombre: "Skate Lab Okusai",
-        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi.Truck reforzados de aluminio Bujes 95 A - Rulemanes Abec 9 - Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en  medidas 8” y 8.25”",
+        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. <br>Truck reforzados de aluminio <br> Bujes 95 A <br> Rulemanes Abec 9 <br> Ruedas de Uretano 52 a 54 mm. <br> Madera Guatambú: resiste hasta 90 kg",
         imagen:"imagenes/skate_lab_01.jpg",
         precio: 100000,
     },
     {
         nombre: "Skate Lab Bicolor",
-        descripcion: "Tabla cóncava con doble kick, compuesto por 7 laminas de madera y resina epoxi reforzados de aluminio Bujes 95 A - Rulemanes Abec 9 - Ruedas de Uretano 54 mm.",
+        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. <br>Truck reforzados de aluminio <br> Bujes 95 A <br> Rulemanes Abec 9 <br> Ruedas de Uretano 52 a 54 mm. <br> Madera Guatambú: resiste hasta 90 kg",
         imagen:"imagenes/skate_lab_02.jpg",
         precio: 75000,
     },
     {
         nombre: "Skate Lab Canadá",
-        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi.Truck reforzados de aluminio Bujes 95 A - Rulemanes Abec 9 - Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en  medidas 8” y 8.25”",
+        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. <br>Truck reforzados de aluminio <br> Bujes 95 A <br> Rulemanes Abec 9 <br> Ruedas de Uretano 52 a 54 mm. <br> Madera Guatambú: resiste hasta 90 kg",
         imagen:"imagenes/skate_lab_03.jpg",
         precio:80000,
     },
     {
         nombre: "Skate Lab Pride",
-        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi.Truck reforzados de aluminio Bujes 95 A - Rulemanes Abec 9 - Ruedas de Uretano 52 a 54 mm. Madera Guatambú: resiste hasta 90 kg, vienen en  medidas 8” y 8.25”",
+        descripcion: "Tabla cóncava con doble kick, compuesto por laminas de madera y resina epoxi. <br>Truck reforzados de aluminio <br> Bujes 95 A <br> Rulemanes Abec 9 <br> Ruedas de Uretano 52 a 54 mm. <br> Madera Guatambú: resiste hasta 90 kg",
         imagen:"imagenes/skate_lab_04.jpg",
         precio:120000,
 
     },
     {
         nombre: "Longboard Cruiser",
-        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
+        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. <br> Largo: 80cm <br> Ancho: 25cm <br> WB: 42,5cm",
         imagen:"imagenes/long_lab_01.jpg",
         precio:120000,
     },
     {
         nombre: "Longboard Rider Pro",
-        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
+        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. <br> Largo: 80cm <br> Ancho: 25cm <br> WB: 42,5cm",
         imagen:"imagenes/long_lab_02.jpg",
         precio:135000,
     },
     {
         nombre: "Longboard Ether",
-        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
+        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. <br> Largo: 80cm <br> Ancho: 25cm <br> WB: 42,5cm",
         imagen:"imagenes/long_lab_03.jpg",
         precio:120000,
     },
     {
         nombre: "Longboard Sunset",
-        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. Largo: 80cm - Ancho: 25cm - WB: 42,5cm",
+        descripcion: "Tabla cóncava compuesta por 7 laminas de madera y resina epoxi. <br> Largo: 80cm <br> Ancho: 25cm <br> WB: 42,5cm",
         imagen:"imagenes/long_lab_04.jpg",
         precio:140000,
     },
     {
         nombre:"Casco Lab",
-        descripcion: "Plástico exterior Polipropileno. Material interior: Goma Eva con espuma y poliéster No removible. Tiras de Polyester nylon (color segun disponibilidad) Orificios de ventilación",
+        descripcion: "Plástico exterior: Polipropileno. <br> Material interior: Goma Eva con espuma y poliéster <br> No removible. <br>Tiras de Polyester nylon <br> Orificios de ventilación",
         imagen:"imagenes/casco.jpg",
         precio:36900,
     },
     {
         nombre:"Protecciones",
-        descripcion:"Kit de protecciones para skate o longboard. Talle S/M. Incluye: set de 2 rodilleras + set de 2 coderas + set de 2 muñequeras.",
+        descripcion:"Kit de protecciones para skate o longboard.<br> Talle S/M.<br> Incluye: set de 2 rodilleras + set de 2 coderas + set de 2 muñequeras.",
         imagen:"imagenes/protecciones.jpg",
         precio:69300,
 
@@ -70,7 +70,7 @@ const productos = [
     },
     {
         nombre:"Trucks de Skate",
-        descripcion:" Trucks de Skate de alta calidad para profesionales. Construidos en fundición de aluminio y ejes de acero templado. Es ideal para tablas de 7.50″, 7.75″ y 8″",
+        descripcion:" Trucks de Skate de alta calidad para profesionales. <br> Construidos en fundición de aluminio y ejes de acero templado. <br> Es ideal para tablas de 7.50″, 7.75″ y 8″",
         imagen:"imagenes/trucks.jpg",
         precio:37000,
     },
@@ -116,10 +116,10 @@ for (let indice= 0; indice < productos.length; indice++){
                         <img src=${productos[indice].imagen}
                             alt="skate-lab-01">
                         <div class="producto-contenedor">
-                            <h2>${productos[indice].nombre}</h2>
-                            <h3>Precio: $${productos[indice].precio}</h3>
-                            <p>Descripción:${productos[indice].descripcion}</p>
-                            <input id="boton-agregar-carrito" type="button" value="Agregar al Carrito"></imput>
+                            <h2 class="nombre-producto">${productos[indice].nombre}</h2>
+                            <h3 class="precio-producto">$${productos[indice].precio}</h3>
+                            <p><strong>Descripción:</strong><br><br>${productos[indice].descripcion}</p>
+                            <input id="boton-agregar-carrito" type="button" value="AGREGAR"></imput>
                         </div>
                     </div>
 
