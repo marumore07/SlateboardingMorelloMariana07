@@ -197,11 +197,13 @@ body nav a {
     gap: 20px;
 }
 
+
 .producto-destacado {
     border: none;
     padding: 2rem;
     width: 200px;
 }
+
 
 .boton-agregar-carrito {
     color: rgb(255, 255, 255);
@@ -224,6 +226,7 @@ body nav a {
     color: rgb(0, 0, 0);
     font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
+    padding-left: 0px;
 }
 
 
@@ -235,6 +238,50 @@ body nav a {
     font-size: 20px;
     margin-bottom: 10px;
 
+}
+
+
+#carrito {
+    background-color: rgba(226, 223, 223, 0.973);
+    padding-left: 30px;
+    padding-bottom: 30px;
+    margin: 60px;
+}
+
+
+.parrafo-carrito {
+    padding: 40px 0px 0px 40px;
+}
+
+#boton-borrar {
+    color: rgb(255, 255, 255);
+    background-color: darkred;
+    border: none;
+    height: 30px;
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 10px 20px 40px;
+}
+
+
+#boton-pagar {
+    color: rgb(255, 255, 255);
+    background-color: darkred;
+    border: none;
+    height: 30px;
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px;
 }
 
 
@@ -372,9 +419,6 @@ legend {
 }
 
 
-
-
-
 .footer-div {
     width: 100%;
     display: flex;
@@ -383,6 +427,7 @@ legend {
     justify-content: center;
     color: rgb(255, 255, 255);
 }
+
 
 .footer-top {
     width: 100%;
@@ -394,6 +439,7 @@ legend {
     padding: 60px 30px 80px 30px;
 }
 
+
 .contacto-footer {
     display: flex;
     flex-direction: column;
@@ -403,10 +449,12 @@ legend {
     padding-bottom: 1rem;
 }
 
+
 .footer-div a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+
 
 .footer-div ul {
     list-style: none;
@@ -414,12 +462,19 @@ legend {
     padding: 0px;
 }
 
+
 .footer-div ul li {
     margin-bottom: 10px;
 }
 
+
 .footer-div h4 {
     margin-bottom: 20px;
+}
+
+
+.parrafo-pagos {
+    padding: 0px 0px 40px 40px;
 }
 
 /* fuentes */
