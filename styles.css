@@ -105,9 +105,13 @@ body nav a {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    display: flex;
     font-size: 16px;
 }
 
+a:hover{
+    color: rgba(235, 235, 1, 0.938);
+}
 
 .foto-fondo {
     width: 100%;
@@ -181,6 +185,12 @@ body nav a {
     font-style: normal;
     font-size: 16px;
     cursor: pointer;
+}
+
+
+button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(235, 235, 1, 0.938);
 }
 
 
@@ -285,6 +295,12 @@ body nav a {
 }
 
 
+input:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(235, 235, 1, 0.938);
+}
+
+
 .video-background {
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -338,11 +354,11 @@ body nav a {
     html {
         font-size: 12px;
         margin: 0 5%;
-
     }
 
     .reseñas {
         grid-template-columns: minmax(200px, 1fr);
+        width: 100%;
     }
 
     .contacto {
@@ -426,6 +442,7 @@ legend {
     align-items: center;
     justify-content: center;
     color: rgb(255, 255, 255);
+    
 }
 
 
